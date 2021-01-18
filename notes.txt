@@ -1,13 +1,9 @@
-steps for linking github to atom...
-create new repository on github, copy repository link,
-...in atom: command>>shift>>p... then enter Github: Clone...
-paste link and hit enter.
-
 Next Steps:
-1) Define function that shows graph using security name (just stock to start),
-primaryExchange, and moving average period as parameters.
-2) Format chart to look more professional.
-3) Figure out how to print chart to a file on the google drive when real-time
-price breaks through chosen moving average - buy alert
+1) Refactor code, make functionality more useful.
+2) Format chart to look more professional - black background, legend,
+    more moving averages, bollinger bands, appealing colors, use TOS as a
+    guide.
+3) Compile watchlists to scan for... 9 / 20 / 50 / 100 / 200
 4) Cycle through list of securities during market hours and alert for buy
-signals with accompanying charts showing bar graph and moving averages.
+    signals by posting accompanying charts. Assign posted security to list and
+    restrict program from posting the same security twice.
