@@ -3,8 +3,6 @@ Next Steps:
 2) Format chart to look more professional - ?black background?, legend,
     more moving averages, bollinger bands, appealing colors, use TOS as a
     guide.
-3) Compile watchlists to scan for... 9 / 20 / 50 / 100 / 200
-4) Cycle through list of securities during market hours and alert for buy
-    signals by posting accompanying charts. Assign posted security to list and
-    restrict program from posting the same security twice.
-5) ADD BOLLINGER BAND ALERTS FOR ALL STOCKS
+3) ADD BOLLINGER BAND ALERTS FOR ALL STOCKS
+4) Find out why I don't have permission for FUBU market data
+5) Upload charts to drive / twitter / stocktwits. 
