@@ -20,9 +20,7 @@ hits = []
 
 # list of securities to cycle through
 SMA9_securities = [
-    ['VFF', 'NASDAQ'],
     ['MSOS', 'ARCA'],
-    ['OIH', 'ARCA'],
     ['CGC', 'NASDAQ'],
     ['CRON', 'NASDAQ'],
     ['BHP', 'NYSE'],
@@ -68,10 +66,8 @@ SMA9_securities = [
     ['BIDU', 'NASDAQ'],
     ['CTEC', 'NASDAQ'],
     ['XLE', 'ARCA'],
-    ['XLF', 'ARCA'],
     ['UUP', 'ARCA'],
     ['USO', 'ARCA'],
-    ['XPER', 'NASDAQ'],
     ['SPCE', 'NYSE'],
     ['IRDM', 'NASDAQ'],
     ['RIOT', 'NASDAQ'],
@@ -84,12 +80,16 @@ SMA9_securities = [
 
 SMA20_securities = [
     ['CAT', 'NYSE'],
+    ['VFF', 'NASDAQ'],
+    ['OIH', 'ARCA'],
+    ['XLF', 'ARCA'],
     ['CRWD', 'NASDAQ'],
     ['RIO', 'NYSE'],
     ['DIA', 'ARCA'],#############
     ['EBAY', 'NASDAQ'],
     ['EEM', 'ARCA'],
     ['FVRR', 'NYSE'],
+    ['XPER', 'NASDAQ'],
     ['ROKU', 'NASDAQ'],
     ['SPY', 'ARCA'],
     ['XRT', 'ARCA'],
@@ -158,7 +158,7 @@ SMA50_securities = [
     ['JD', 'NASDAQ'],
     ['NIO', 'NYSE'],
     ['PDD', 'NASDAQ'],
-    ['FUBO', 'NYSE'],
+    # ['FUBO', 'NYSE'],
     ['IGV', 'BATS'],
     ['TEAM', 'NASDAQ'],
     ['SEDG', 'NASDAQ'],
@@ -173,7 +173,7 @@ SMA50_securities = [
     ['ONEM', 'NASDAQ'],
     ['ANTM', 'NYSE'],
     ['FTCH', 'NYSE'],
-    ['PLTR', 'NYSE'],
+    # ['PLTR', 'NYSE'],
     ['ACB', 'NYSE'],
     ['ZI', 'NASDAQ'],
     ['SHOP', 'NYSE'],
@@ -387,7 +387,8 @@ def ma_chart_200(tickerCapString, primeExchangeCapString, numDailyTicks):
         plt.xlabel('Days')
         plt.ylabel('Price')
         plt.legend()
-        plt.show()
+        plt.savefig(f'''{tickerCapString}_{ma_length_200}_{today_date}.pdf''', bbox_inches='tight')
+        # plt.show()
         # plt.savefig('test_chart.png')
     else:
         print(f'''{tickerCapString} not in buying range''')
@@ -479,8 +480,8 @@ def ma_chart_20(tickerCapString, primeExchangeCapString, numDailyTicks):
         plt.xlabel('Days')
         plt.ylabel('Price')
         plt.legend()
-        plt.show()
-        # plt.savefig('test_chart.png')
+        # plt.show()
+        plt.savefig(f'''{tickerCapString}_{ma_length_20}_{today_date}.pdf''', bbox_inches='tight')
     else:
         print(f'''{tickerCapString} not in buying range.''')
 
@@ -560,8 +561,8 @@ def ma_chart_50(tickerCapString, primeExchangeCapString, numDailyTicks):
         plt.xlabel('Days')
         plt.ylabel('Price')
         plt.legend()
-        plt.show()
-        # plt.savefig('test_chart.png')
+        # plt.show()
+        plt.savefig(f'''{tickerCapString}_{ma_length_50}_{today_date}.pdf''', bbox_inches='tight')
     else:
         print(f'''{tickerCapString} not in buying range''')
 
@@ -594,5 +595,4 @@ while True:
         if SMA200_securities[ticker][0] not in hits:
             ma_chart_200(SMA200_securities[ticker][0], SMA200_securities[ticker][1], 150)
             ib.sleep(1)
-
 
