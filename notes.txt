@@ -6,3 +6,6 @@ Next Steps:
 3) ADD BOLLINGER BAND ALERTS FOR ALL STOCKS
 4) Find out why I don't have permission for FUBU market data
 5) Upload charts to drive / twitter / stocktwits. 
+
+1) Get charts looking good...
+2) Upload to new daily folder in Drive 
