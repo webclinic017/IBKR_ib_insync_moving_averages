@@ -1,8 +1,6 @@
 Next Steps:
-1) Refactor code, make functionality more useful.
-2) Format chart to look more professional - ?black background?, legend,
-    more moving averages, bollinger bands, appealing colors, use TOS as a
-    guide.
-3) ADD BOLLINGER BAND ALERTS FOR ALL STOCKS
-4) Find out why I don't have permission for FUBU market data
-5) Upload charts to drive / twitter / stocktwits. 
+1) ADD BOLLINGER BAND ALERTS FOR ALL STOCKS
+2) Find out why I don't have permission for FUBU market data
+3) Upload to new daily folder in Drive 
+4) Upload directly to twitter or stocktwits
+5) Autonomous trading 
